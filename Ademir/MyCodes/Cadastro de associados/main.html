@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Associados</title>
+    </head>
+    <body>
+        <form method="post" action="dados.php">
+            <table>
+                <tr>
+                    <td colspan="2" >
+                        <h1>Cadastro de Associados</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nome:
+                        <input type="text" name="nome" size="44" required>
+                    </td>
+                    <td>
+                        Sexo:
+                        <input type="radio" name="sexo" value="Feminino"> Feminino 
+                        <input type="radio" name="sexo" value="Masculino"> Masculino
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                        <input type="email" name="email" size="44" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Esporte que aprecia:
+                        <input type="checkbox" name="esporte[]" value="futebol"> Futebol 
+                        <input type="checkbox" name="esporte[]" value="volei"> Vôlei 
+                        <input type="checkbox" name="esporte[]" value="basquete"> Basquete 
+                        <input type="checkbox" name="esporte[]" value="tenis"> Tênis 
+                    </td>
+                    <td>
+                        Outros:
+                        <input type="text" name="esporteoutro">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Comentário sobre os esportes favoritos:<br>
+                        <textarea name="comentario" rows="7" cols="50" placeholder="Digite seu comentário aqui."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
